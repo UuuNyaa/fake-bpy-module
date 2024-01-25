@@ -5,6 +5,10 @@
 __pycache__/
 .venv
 
+# ignore vscode files
+/.vscode/
+/.devcontainer/
+
 # build files
 tests/tmp
 src/mods/generated_mods
@@ -13,6 +17,7 @@ tools/pip_package/tmp-*
 
 # test logs
 fake_bpy_module_test.log
+/logs/
 
 # ignore artifacts
 release

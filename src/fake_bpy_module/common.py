@@ -2046,6 +2046,16 @@ class DataTypeRefiner:
             variable_kind: str, parameter_str: str = None,
             additional_info: Dict[str, typing.Any] = None) -> 'DataType':
 
+        print(f"%%%%%%%%%%"
+            f"\t{data_type.to_string()}"
+            f"\t{module_name}"
+            f"\t{variable_kind}"
+            f"\t{parameter_str}"
+            f"\t{additional_info}"
+            f'\t{self._entry_points_cache["uniq_full_names"]}'
+            f'\t{self._entry_points_cache["uniq_module_names"]}'
+        )
+
         assert variable_kind in (
             'FUNC_ARG', 'FUNC_RET', 'CONST', 'CLS_ATTR', 'CLS_BASE')
 
